@@ -62,7 +62,51 @@ h1,h2{
     width: 17vw;
 }
 
+.btn-border-custom {
+    border: 2px solid var(--colorprimary);
+    border-radius: 0px;
+    position: relative;
+    transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+} 
+.btn-border-custom::before {
+    position: absolute;
+    content: "";
+    border: 8px solid rgb(0, 0, 0);
+    height: 43px;
+    width: 90%;
+    top: -10%;
+    left: 5%;
+    transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+} 
+.btn-border-custom::after {
+    position: absolute;
+    content: "";
+    border: 6px solid rgb(0, 0, 0);
+    height: 30px;
+    width: 142px;
+    top: 8%;
+    left: -2%;
+    transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  .btn-border-custom:hover::before,
+  .btn-border-custom:hover::after {
+  opacity: 0%;
+  transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+  .btn-border-custom:hover {
+  border: 2px solid var(--colorprimary);
+  transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+
+ @media screen and (max-width: 1280px) {
+    .mobile-height{
+        height: 70vh !important;
+     }
+}
 @media screen and (max-width: 1025px) {
+    .bgmoon {
+        height: 70vh;   
+    } 
     .adjustfilter {
         background: linear-gradient(to right, rgb(0, 0, 0),rgba(0, 0, 0, 0.844), rgba(0, 0, 0, 0.6), transparent, transparent, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.794), rgba(0, 0, 0, 0.884), rgb(0, 0, 0) );
     } 
@@ -72,6 +116,12 @@ h1,h2{
     .responsivetexth5{
         font-size: 15px;
     }  
+    .mobile-height{
+        height: 70vh !important;
+     }
+     .mobile-height-rocket{
+         height: 180vh !important;
+      }
 }
 @media screen and (max-width: 821px) {
     .bgmoon {
@@ -98,7 +148,11 @@ h1,h2{
     .mobile-height{
        height: 50vh !important;
     }
+    .mobile-height-rocket{
+        height: 80vh !important;
+     }
 }
+
 @media screen and (max-width: 450px) {
     .bgmoon {
         height: 30vh;
@@ -122,6 +176,10 @@ h1,h2{
         font-size: 8px !important;
     }
     .mobile-height{
-       height: 60vh !important;
+       height: 50vh !important;
     }
+    .mobile-height-rocket{
+        padding-top: 20px !important;
+        height: 40vh !important;
+     }
 }
