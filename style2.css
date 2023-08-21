@@ -1,0 +1,109 @@
+:root{
+    --colorprimary: #0D6EFD;
+}
+*{
+    font-family: 'Metrophobic', sans-serif;
+
+}
+h1,h2{
+    font-family: 'Orbitron', sans-serif !important;
+}
+.orbitron{
+    font-family: 'Orbitron', sans-serif !important;
+}
+.metrophobic{
+    font-family: 'Metrophobic', sans-serif !important;
+}
+.bgmoon {
+    height: 100vh;
+    background: url(media/moon.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+.filtermoon{
+    background: linear-gradient( black, rgba(0, 0, 0, 0.4), rgba(3, 3, 160, 0.095) 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.978), black);
+    backdrop-filter: blur(1px) saturate(0.2);
+}
+.responsivetexth1{
+   margin-left: 20px;
+   font-size: 75px;
+   font-family: 'Orbitron', sans-serif;
+}
+.responsivetexth5{
+    font-size: 23px;
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 20px;
+}
+.adjustfilter {
+    background: linear-gradient(to right, rgb(0, 0, 0),rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.7), transparent, transparent, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.94), rgb(0, 0, 0), rgb(0, 0, 0) );
+    height: 90%;
+}
+.arrowheight{
+    height: 10%;
+}
+
+/* countdown  */
+
+.sizecustom {
+    min-height: 30vh;
+    background: black;
+    color: white;
+    width: 100%;
+}
+
+.countdownsize {
+    font-size: 80px;
+}
+
+.bordercountdown {
+    border: 2px solid rgb(0, 110, 255);
+    width: 17vw;
+}
+
+@media screen and (max-width: 1025px) {
+    .adjustfilter {
+        background: linear-gradient(to right, rgb(0, 0, 0),rgba(0, 0, 0, 0.844), rgba(0, 0, 0, 0.6), transparent, transparent, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.794), rgba(0, 0, 0, 0.884), rgb(0, 0, 0) );
+    } 
+    .responsivetexth1{
+        font-size: 50px;
+    }
+    .responsivetexth5{
+        font-size: 15px;
+    }  
+}
+@media screen and (max-width: 821px) {
+    .bgmoon {
+        height: 50vh;   
+    } 
+    .adjustfilter {
+        background: linear-gradient(to right, rgb(0, 0, 0),rgba(0, 0, 0, 0.844), rgba(0, 0, 0, 0.6), transparent, transparent, transparent, rgba(0, 0, 0, 0.62), rgb(0, 0, 0), black, rgb(0, 0, 0), rgb(0, 0, 0) );
+    } 
+    .responsivetexth1{
+        font-size: 30px;   
+    }
+    .responsivetexth5{
+        font-size: 13px;
+    }  
+    .bordercountdown {
+        width: 20vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    .bgmoon {
+        height: 30vh;
+    }  
+    .adjustfilter {
+        background: linear-gradient(to right, rgb(0, 0, 0),rgba(0, 0, 0, 0.844), rgba(0, 0, 0, 0.6), transparent, transparent, transparent, rgba(0, 0, 0, 0.62), rgb(0, 0, 0), black, rgb(0, 0, 0), rgb(0, 0, 0) );
+    } 
+    .responsivetexth1{
+        font-size: 15px;
+    }
+    .responsivetexth5{
+        font-size: 6px;
+    }
+    .bordercountdown {
+        width: 50vw;
+    }
+}
