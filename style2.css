@@ -89,6 +89,15 @@ h1,h2{
     .bordercountdown {
         width: 20vw;
     }
+    .responsiveTitle{
+        font-size: 30px !important;
+    }
+    .responsiveParagraph{
+        font-size: 15px !important;
+    }
+    .mobile-height{
+       height: 50vh !important;
+    }
 }
 @media screen and (max-width: 450px) {
     .bgmoon {
@@ -105,5 +114,14 @@ h1,h2{
     }
     .bordercountdown {
         width: 50vw;
+    }
+    .responsiveTitle{
+        font-size: 12px !important;
+    }
+    .responsiveParagraph{
+        font-size: 8px !important;
+    }
+    .mobile-height{
+       height: 60vh !important;
     }
 }
