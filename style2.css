@@ -98,12 +98,52 @@ h1,h2{
   transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
  }
 
- @media screen and (max-width: 1280px) {
+.bgEarth{
+    background-image: url(media/sunrise-1765027_1920.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: fill;
+    background-position: center;
+ }
+ .filterEarth{
+
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 0), transparent, transparent, transparent);
+ }
+ .border-final-faded{
+    height: 30px;
+    border-top: 6px solid;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-image: linear-gradient(to right, #090907,#090907, var(--colorprimary), var(--colorprimary), #8ED5FF, var(--colorprimary), var(--colorprimary), #090907, #090907) 1;
+    border-image-slice: 1;
+    background: linear-gradient(#090907, black, black,black);
+ }
+ .zx-2{
+    z-index: -2 !important;
+ }
+ .zx-1{
+    z-index: -1 !important;
+ }
+ .zx0{
+    z-index: 0 !important;
+ }
+ .zx1{
+    z-index: 1 !important;
+ }
+ .zx2{
+    z-index: 2 !important;
+ }
+ @media screen and (min-width: 1025px; max-width: 1280px) {
     .mobile-height{
         height: 70vh !important;
      }
+    .mobile-height2{
+        min-height: 100vh !important;
+    }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (min-width:821px; max-width: 1025px) {
     .bgmoon {
         height: 70vh;   
     } 
@@ -122,8 +162,11 @@ h1,h2{
      .mobile-height-rocket{
          height: 180vh !important;
       }
+      .mobile-height2{
+        min-height: 100vh !important;
+    }
 }
-@media screen and (max-width: 821px) {
+@media screen and ( max-width: 821px) {
     .bgmoon {
         height: 50vh;   
     } 
@@ -150,7 +193,10 @@ h1,h2{
     }
     .mobile-height-rocket{
         height: 80vh !important;
-     }
+    }
+    .text-secondary{
+        margin-bottom: 30px !important;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -182,4 +228,14 @@ h1,h2{
         padding-top: 20px !important;
         height: 40vh !important;
      }
+    .responsiveFooterTitle{
+        font-size: 12px !important;
+    }
+    .responsiveFooterParagraph{
+        font-size: 8px !important;
+    }
+    .mobile-height2{
+        min-height: 100vh !important;
+      
+    }
 }
