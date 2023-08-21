@@ -1,1 +1,0 @@
-# EsercizioBlack-GabrieleRossi

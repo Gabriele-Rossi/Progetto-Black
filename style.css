@@ -135,7 +135,7 @@ h1,h2{
  .zx2{
     z-index: 2 !important;
  }
- @media screen and (min-width: 1025px; max-width: 1280px) {
+ @media screen and (max-width: 1280px) {
     .mobile-height{
         height: 70vh !important;
      }
@@ -143,7 +143,7 @@ h1,h2{
         min-height: 100vh !important;
     }
 }
-@media screen and (min-width:821px; max-width: 1025px) {
+@media screen and (max-width: 1025px) {
     .bgmoon {
         height: 70vh;   
     } 
